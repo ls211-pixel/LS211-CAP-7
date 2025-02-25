@@ -4,7 +4,7 @@
 
 In this era or generation, we observe that many people are experiencing various health issues, one of the most critical being **Heart Failure** — including **Cardiovascular Diseases (CVDs)**. These conditions can lead to fatal outcomes at any stage of life. Heart failure diseases are prevalent across the globe, making it essential to find effective solutions.
 
-To address this issue, various medical techniques and methods are being utilized. In addition, advancements in **computer technology** — particularly **Machine Learning (ML)**, **Deep Learning (DL)**, and other computational methods — have shown great promise in tackling heart failure problems.
+To address this issue, various medical techniques and methods are being utilized. In addition, advancements in **computer technology** — including **Machine Learning (ML)**, **Deep Learning (DL)**, and other computational methods — have shown great promise in tackling heart failure problems.
 
 Our research focuses on leveraging these technologies, looking into previous studies, research papers, and methodologies developed by experts in the field. Furthermore, we analyze patient data to identify the angles and factors at which individuals are most affected by CVDs. **Machine Learning** emerges as a powerful tool for predicting heart failure with high accuracy and speed, making it a critical asset in modern medical research.
 
@@ -15,10 +15,9 @@ In the current medical landscape, several models and methods are utilized, such 
 - **Neural Networks (NN)**
 - **Random Forests (RF)**
 - **Decision Tree Models**
-- **Logistic Regression (LR)**
-- **Support Vector Machines (SVM)**
+- **Logistic in Regression (LR)**
 - **K-Nearest Neighbors (KNN)**
-- **Artificial Neural Networks (ANN)**
+
 
 These models play a crucial role in accurately predicting heart failure.
 
@@ -44,14 +43,14 @@ This theorem also predicts based on the patient condition is he or she having go
 In this project, **Bayes' Theorem** is applied to know the probability of heart failure based on the data. The theorem is represented by the following formula:
 
 \[
-P(y \mid X) = \frac{P(X \mid y) \times P(y)}{P(X)}
+P(b \mid a) = \fra{P(y \mid a) \timees P(y)}{P(a)}
 \]
 
-Where:
-- \( P(y \mid X) \): The probability of heart failure occurring given the data \( X \)
-- \( P(X \mid y) \): The probability of observing the data \( X \) if heart failure has occurred
-- \( P(y) \): The prior probability of heart failure happening
-- \( P(X) \): The overall probability of the data \( X \) being observed
+so,
+- \( P(y \mid a) \): Is should be probability of heart failure occurring given the data \( a \)
+- \( P(a \mid b) \): Is should be the probability of observing the data \( a \) if heart failure has occurred
+- \( P(b) \):  Is should be The prior probability of heart failure happening
+- \( P(a) \): The overall probability of the data \( a \) being observed
 
 ## Logistic Regression:
 Methods like Machine learning and deep learning in that logistic regression is the model which can solve the classification problems this also is based on the probability. This model computes the logarithm of risks after converting probability to risks. 
@@ -61,14 +60,14 @@ Hence here is the mathematical form,
 In our study, we model the association between patient data and the likelihood of heart failure using **Logistic Regression**. The formula can be written as follows:
 
 \[
-\log\left(\frac{P_i}{1 - P_i}\right) = \beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \dots + \beta_k X_{ik}
+\log\left(\frac{q_i}{1 - q_i}\right) = \beta_0 + \beta_1 Y_{i1} + \beta_2 Y_{i2} + \dots + \beta_m Y_{im}
 \]
 
 Where:
-- \( P_i \): The probability of heart failure for the \( i \)-th patient
+- \( q_i \): The probability of heart failure for the \( i \)-th patient
 - \( \beta_0 \): The intercept term
-- \( \beta_1, \beta_2, \dots, \beta_k \): Coefficients representing the effect of each predictor variable
-- \( X_{i1}, X_{i2}, \dots, X_{ik} \): Predictor variables (such as age, blood pressure, cholesterol level, etc.) for the \( i \)-th patient
+- \( \beta_1, \beta_2, \dots, \beta_m \): Coefficients representing the effect of each predictor variable
+- \( Y_{i1}, Y_{i2}, \dots, Y_{ik} \): Predictor variables (such as age, blood pressure, cholesterol level, etc.) for the \( i \)-th patient
 
   Its also converts any maximum value to zero to one by using a sigma function.This function is seems to be in S shaped curve.
 
@@ -79,10 +78,10 @@ The **log-odds** of heart failure are on the left side of the equation, whereas 
 Ensemble learning which uses multiple classifiers to solve a single task and enhance the model accuracy is based on the Random Forest classifier. It combines a number of decision trees to the input data and sums up the results to smooth out the errors. 
 In contrast to a single decision tree, random forest requests forecast from every tree and makes prediction based on the majority vote of the projections. There is less overfitting and the number of trees boosts the accuracy.
 
-Let's call the Random Forest model RF, the input features , and the goal variable Y.
-Given N decision trees in the forest, the prediction of 𝑅⁢P can be expressed as follows:
+Let's we can say the  model RP, the input  , and the goal variable Y.
+Given decision of forest is N, the predicted of R⁢P can be expressed as here is:
 
-RF(y)=MODE(Tree(y),Tree2(y),....,TreeN(y))
+RP(y)=MODE(Tree(y),Tree2(y),....,TreeN(y))
 
 ## Decision Tree
 This method decision tree is used for heart failure prediction moreover its also a machine learning model it supposed be like tree like structure either the patient is having a heart disease on their previous data.This model is so helpful due to its interpreability which can handle both numerical and categorical data.
