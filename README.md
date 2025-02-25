@@ -40,13 +40,64 @@ Its useful for the feature engineering.
 This theorem also predicts based on the patient condition is he or she having good cholestral or any illness it shows very fast.
 ## Bayes' Theorem
 
-Based on the information provided, we employ **Bayes' Theorem** in our study to forecast the likelihood of cardiac failure. The formula can be written as follows:
 
-P(y \mid X) = \frac{P(X \mid y) \times P(y)}{P(X)} \[
+In this project, **Bayes' Theorem** is applied to know the probability of heart failure based on the data. The theorem is represented by the following formula:
 
-The likelihood of heart failure given the data \( X \)- \( P(X \mid y) \) is as follows: The likelihood of seeing the data \( X \) in light of heart failure - \( P(y) \): Heart failure's prior probability - \( P(X) \): The likelihood that the data will be observed \( X \)
+\[
+P(y \mid X) = \frac{P(X \mid y) \times P(y)}{P(X)}
+\]
 
-This statistical method helps to more precisely determine the chance of heart failure by updating probabilities as new information becomes available.
+Where:
+- \( P(y \mid X) \): The probability of heart failure occurring given the data \( X \)
+- \( P(X \mid y) \): The probability of observing the data \( X \) if heart failure has occurred
+- \( P(y) \): The prior probability of heart failure happening
+- \( P(X) \): The overall probability of the data \( X \) being observed
+
+## Logistic Regression:
+Methods like Machine learning and deep learning in that logistic regression is the model which can solve the classification problems this also is based on the probability. This model computes the logarithm of risks after converting probability to risks. 
+Hence here is the mathematical form,
+## Logistic Regression Formula
+
+In our study, we model the association between patient data and the likelihood of heart failure using **Logistic Regression**. The formula can be written as follows:
+
+\[
+\log\left(\frac{P_i}{1 - P_i}\right) = \beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \dots + \beta_k X_{ik}
+\]
+
+Where:
+- \( P_i \): The probability of heart failure for the \( i \)-th patient
+- \( \beta_0 \): The intercept term
+- \( \beta_1, \beta_2, \dots, \beta_k \): Coefficients representing the effect of each predictor variable
+- \( X_{i1}, X_{i2}, \dots, X_{ik} \): Predictor variables (such as age, blood pressure, cholesterol level, etc.) for the \( i \)-th patient
+
+  Its also converts any maximum value to zero to one by using a sigma function.This function is seems to be in S shaped curve.
+
+The **log-odds** of heart failure are on the left side of the equation, whereas a linear combination of the predictors is on the right. This model aids in our comprehension of the ways in which different factors influence the risk of heart failure.
+
+## Random Forest 
+
+Ensemble learning which uses multiple classifiers to solve a single task and enhance the model accuracy is based on the Random Forest classifier. It combines a number of decision trees to the input data and sums up the results to smooth out the errors. 
+In contrast to a single decision tree, random forest requests forecast from every tree and makes prediction based on the majority vote of the projections. There is less overfitting and the number of trees boosts the accuracy.
+
+Let's call the Random Forest model RF, the input features , and the goal variable Y.
+Given N decision trees in the forest, the prediction of 𝑅⁢P can be expressed as follows:
+
+RF(y)=MODE(Tree(y),Tree2(y),....,TreeN(y))
+
+## Decision Tree
+This method decision tree is used for heart failure prediction moreover its also a machine learning model it supposed be like tree like structure either the patient is having a heart disease on their previous data.This model is so helpful due to its interpreability which can handle both numerical and categorical data.
+
+Moreover for this method risk factors are very high.Apart from that there accuracy rate is more than 90% which is so unique in all the classification methods.
+Each of the one algorithm splits into the subsets based on their dataset of their attributes,every node will be pointed a decision point based on thier attributes.
+This attributes chooses to split the one at each node on thier metrics like "Gini" this separates the either the patient having heart disease or no heart disease.
+This model is very easy to understand when its compared to the other model.
+
+Here is the flow chart of decision tree model :
+
+<img width="314" alt="image" src="https://github.com/user-attachments/assets/b0d74c42-2633-45db-914c-8537924664d8" />
+
+So,here we can say these are Methods that is used for Heart failure prediction by using Machine learning Methods.Without these we can unable to find the data or patients list either they are having CVDs diseases like heart failure....
+
 
 
 
